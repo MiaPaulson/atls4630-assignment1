@@ -1,0 +1,34 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(195, 212, 228);
+}
+body {
+    background-color: rgb(77, 60, 40);
+}
+
+/* having all the buttons be in the same class to be displayed in flex container */
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* the button that doesn't change CSS but changes the HTML */
+#ouch {
+    background-color: black;
+    font-size: large;
+    color:rgb(195, 212, 228);
+    padding: 15px;
+    /* asked ChatGPT how to make the button round to make it look nicer! */
+    border-radius: 15px;
+}
+
+/* the button that changes the CSS */
+#color {
+    background-color: black;
+    font-size: large;
+    color:rgb(195, 212, 228);
+    padding: 15px;
+    /* asked ChatGPT how to make the button round to make it look nicer! */
+    border-radius: 15px;
+}
