@@ -1,4 +1,4 @@
-// when button with "ouch" ID is clicked, change the works to say OUCH!/HEY!/STOP!
+// when button with "ouch" ID is clicked, change the works to say OUCH!/HEY!/STOP!, etc.
 // get that element
 const ouch = document.getElementById("ouch");
 
@@ -19,7 +19,7 @@ ouch.addEventListener("click", () => {
     console.log(index);
     // changing the text itself of the button
     ouch.innerText = phrases[index];
-})
+});
 
 // when "color" ID is clicked, change the heading color
 // get elements - button and heading
@@ -36,7 +36,7 @@ color.addEventListener("click", () => {
     // at beginning, turns red - then "clicked" becomes true
     if (clicked === false) {
         console.log("false");
-        h1.style.color = "red";
+        h1.style.color = "black";
         clicked = true;
     }
     // if clicked again, color will go back to OG light blue, and "clicked" becomes false again
@@ -45,4 +45,18 @@ color.addEventListener("click", () => {
     h1.style.color = "rgb(195, 212, 228)";
     clicked = false;
     }
-})
+});
+
+// key pressing - each time key is clicked, background picks random color
+const body = document.querySelector("body");
+// any time key is pressed, change background color
+body.addEventListener("keypress", () => {
+    console.log("body!");
+    // want to pick random color every time a key is clicked
+    // used this code from first class
+    const red = Math.random() * 255;
+    const blue = Math.random() * 255;
+    const green = Math.random() * 255;
+    // with random numbers above, pick color of background
+    body.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`;
+});

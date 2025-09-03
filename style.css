@@ -6,6 +6,12 @@ body {
     background-color: rgb(77, 60, 40);
 }
 
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(195, 212, 228);
+    font-size: large;
+}
+
 /* having all the buttons be in the same class to be displayed in flex container */
 .buttons {
     display: flex;
